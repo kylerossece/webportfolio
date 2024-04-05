@@ -124,8 +124,6 @@ label {
 
 .sections-container {
   height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 /* Tools Section Start */
@@ -217,11 +215,14 @@ label {
 }
 @media (min-width: 1281px) and (max-width: 1600px) {
   .projects-container {
-    padding-top: 110rem;
+    padding-top: 230rem;
   }
 
   .contact-container {
-    padding-top: 100rem;
+    padding-top: 250rem;
+  }
+  .landing-sub-text {
+    display: none;
   }
 }
 
@@ -230,14 +231,17 @@ label {
     display: none;
   }
   .projects-container {
-    padding-top: 130rem;
+    padding-top: 210rem;
   }
 
   .contact-container {
     margin-left: 40rem;
-    padding: 110rem 2.5rem 0 2.5rem;
+    padding: 230rem 2.5rem 0 2.5rem;
     display: flex;
     flex-flow: column wrap;
+  }
+  .landing-sub-text {
+    display: none;
   }
 }
 

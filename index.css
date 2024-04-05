@@ -290,7 +290,7 @@ label {
 
   .projects-container {
     padding-left: 2rem;
-    padding-top: 90rem;
+    padding-top: 170rem;
   }
 
   .projects-title {
@@ -302,14 +302,14 @@ label {
   }
 
   .contact-container {
-    padding-top: 60rem;
+    padding-top: 170rem;
     margin-left: 0rem;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 768px) {
   .contact-container {
-    padding-top: 70rem;
+    padding-top: 185rem;
   }
 
   .landing-title-text {

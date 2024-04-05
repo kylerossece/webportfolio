@@ -24,6 +24,7 @@ a:visited {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -214,11 +215,14 @@ label {
 }
 @media (min-width: 1281px) and (max-width: 1600px) {
   .projects-container {
-    padding-top: 110rem;
+    padding-top: 230rem;
   }
 
   .contact-container {
-    padding-top: 100rem;
+    padding-top: 250rem;
+  }
+  .landing-sub-text {
+    display: none;
   }
 }
 
@@ -227,18 +231,24 @@ label {
     display: none;
   }
   .projects-container {
-    padding-top: 130rem;
+    padding-top: 210rem;
   }
 
   .contact-container {
     margin-left: 40rem;
-    padding: 110rem 2.5rem 0 2.5rem;
+    padding: 230rem 2.5rem 0 2.5rem;
     display: flex;
     flex-flow: column wrap;
+  }
+  .landing-sub-text {
+    display: none;
   }
 }
 
 @media (max-width: 1024px) {
+  html {
+    scroll-snap-type: none;
+  }
   .about-container {
     display: flex;
     flex-flow: column wrap;
@@ -284,7 +294,7 @@ label {
 
   .projects-container {
     padding-left: 2rem;
-    padding-top: 90rem;
+    padding-top: 170rem;
   }
 
   .projects-title {
@@ -296,14 +306,14 @@ label {
   }
 
   .contact-container {
-    padding-top: 90rem;
+    padding-top: 170rem;
     margin-left: 0rem;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 100px) and (max-width: 768px) {
   .contact-container {
-    padding-top: 90rem;
+    padding-top: 185rem;
   }
 
   .landing-title-text {
@@ -311,32 +321,8 @@ label {
   }
 }
 
-@media (max-height: 768px) {
+@media (max-width: 480px) {
   .landing-title-text {
-    font-size: 5rem;
-  }
-  .contact-container {
-    padding-top: 175rem;
-  }
-  .projects-container {
-    padding-top: 150rem;
-  }
-  .landing-sub-text {
-    display: none;
-  }
-}
-
-@media (min-height: 767px) and (max-height: 480px) {
-  .landing-title-text {
-    font-size: 5rem;
-  }
-  .contact-container {
-    padding-top: 200rem;
-  }
-  .projects-container {
-    padding-top: 220rem;
-  }
-  .landing-sub-text {
-    display: none;
+    font-size: 4rem;
   }
 }
